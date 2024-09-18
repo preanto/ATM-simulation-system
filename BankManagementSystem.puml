@@ -1,0 +1,38 @@
+@startuml
+class bank.management.system.BalanceEnquiry
+class bank.management.system.Diposit
+class bank.management.system.FastCash
+class bank.management.system.JFrame
+class bank.management.system.Login
+class bank.management.system.SignUpOne
+class bank.management.system.SignUpThree
+class bank.management.system.SignUpTwo
+class bank.management.system.Transection
+class bank.management.system.Withdrawal
+class bank.management.system.conn
+class com.toedter.calendar.JDateChooser
+class java.sql.ResultSet
+class java.util.Date
+interface bank.management.system.ActionListener
+bank.management.system.BalanceEnquiry --|> bank.management.system.JFrame
+bank.management.system.BalanceEnquiry ..> java.sql.ResultSet
+bank.management.system.BalanceEnquiry --|> bank.management.system.ActionListener
+bank.management.system.Diposit --|> bank.management.system.JFrame
+bank.management.system.Diposit --|> bank.management.system.ActionListener
+bank.management.system.FastCash --|> bank.management.system.JFrame
+bank.management.system.FastCash ..> java.util.Date
+bank.management.system.FastCash --|> bank.management.system.ActionListener
+bank.management.system.Login --|> bank.management.system.JFrame
+bank.management.system.Login --|> bank.management.system.ActionListener
+bank.management.system.SignUpOne --|> bank.management.system.JFrame
+bank.management.system.SignUpOne ..> com.toedter.calendar.JDateChooser
+bank.management.system.SignUpOne --|> bank.management.system.ActionListener
+bank.management.system.SignUpThree --|> bank.management.system.JFrame
+bank.management.system.SignUpThree --|> bank.management.system.ActionListener
+bank.management.system.SignUpTwo --|> bank.management.system.JFrame
+bank.management.system.SignUpTwo --|> bank.management.system.ActionListener
+bank.management.system.Transection --|> bank.management.system.JFrame
+bank.management.system.Transection --|> bank.management.system.ActionListener
+bank.management.system.Withdrawal --|> bank.management.system.JFrame
+bank.management.system.Withdrawal --|> bank.management.system.ActionListener
+@enduml
